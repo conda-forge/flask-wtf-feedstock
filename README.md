@@ -1,7 +1,7 @@
 About flask-wtf
 ===============
 
-Home: http://github.com/lepture/flask-wtf
+Home: https://github.com/lepture/flask-wtf
 
 Package license: BSD 3-Clause
 
