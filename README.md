@@ -14,14 +14,15 @@ Summary: Simple integration of Flask and WTForms
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/flask-wtf-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/flask-wtf-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/flask-wtf-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/flask-wtf-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/flask-wtf-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/flask-wtf-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/flask-wtf-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/flask-wtf-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/flask-wtf/badges/version.svg)](https://anaconda.org/conda-forge/flask-wtf)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/flask-wtf/badges/downloads.svg)](https://anaconda.org/conda-forge/flask-wtf)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-flask--wtf-green.svg)](https://anaconda.org/conda-forge/flask-wtf) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/flask-wtf.svg)](https://anaconda.org/conda-forge/flask-wtf) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/flask-wtf.svg)](https://anaconda.org/conda-forge/flask-wtf) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/flask-wtf.svg)](https://anaconda.org/conda-forge/flask-wtf) |
 
 Installing flask-wtf
 ====================
@@ -66,6 +67,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
