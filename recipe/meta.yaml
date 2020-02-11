@@ -22,7 +22,7 @@ requirements:
   run:
     - python
     - flask
-    - werkzeug <1.0.0
+    - werkzeug
     - wtforms
 
 test:
