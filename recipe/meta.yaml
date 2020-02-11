@@ -1,22 +1,18 @@
 {% set name = "Flask-WTF" %}
 {% set version = "0.14.2" %}
-{% set compress_type = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_val = "5d14d55cfd35f613d99ee7cba0fc3fbbe63ba02f544d349158c14ca15561cc36" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
-  {{ hash_type }}: {{ hash_val }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 5d14d55cfd35f613d99ee7cba0fc3fbbe63ba02f544d349158c14ca15561cc36
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 2
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
@@ -26,7 +22,7 @@ requirements:
   run:
     - python
     - flask
-    - werkzeug
+    - werkzeug <1.0.0
     - wtforms
 
 test:
@@ -46,3 +42,4 @@ about:
 extra:
   recipe-maintainers:
     - pmlandwehr
+    - xylar
