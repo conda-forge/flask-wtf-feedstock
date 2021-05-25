@@ -22,17 +22,21 @@ requirements:
   run:
     - python
     - flask
-    - werkzeug
+    - itsdangerous
     - wtforms
 
 test:
+  requires:
+    - pip
   imports:
     - flask_wtf
     - flask_wtf.recaptcha
+  commands:
+    - pip check
 
 about:
   home: https://github.com/lepture/flask-wtf
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: Simple integration of Flask and WTForms
