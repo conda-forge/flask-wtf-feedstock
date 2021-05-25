@@ -3,7 +3,7 @@ About flask-wtf
 
 Home: https://github.com/lepture/flask-wtf
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flask-wtf-feedstock/blob/master/LICENSE.txt)
 
