@@ -38,7 +38,7 @@ about:
   home: https://github.com/lepture/flask-wtf
   license: BSD-3-Clause
   license_family: BSD
-  license_file: LICENSE
+  license_file: LICENSE.rst
   summary: Simple integration of Flask and WTForms
   dev_url: https://github.com/lepture/flask-wtf
   doc_url: https://flask-wtf.readthedocs.io/en/stable/
