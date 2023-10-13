@@ -1,29 +1,29 @@
 {% set name = "Flask-WTF" %}
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/Flask-WTF-{{ version }}.tar.gz
-  sha256: 41c4244e9ae626d63bed42ae4785b90667b885b1535d5a4095e1f63060d12aa9
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flask_wtf-{{ version }}.tar.gz
+  sha256: b51cfa7ad14e03de432a6268e8341354939d0beebf30fce66f8617a93e55e2a0
 
 build:
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
+    - hatchling
     - pip
-
   run:
-    - python >=3.7
+    - python >=3.8
     - flask
-    - itsdangerous
     - wtforms
+    - itsdangerous
 
 test:
   requires:
@@ -35,13 +35,13 @@ test:
     - pip check
 
 about:
-  home: https://github.com/lepture/flask-wtf
+  home: https://github.com/wtforms/flask-wtf
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.rst
   summary: Simple integration of Flask and WTForms
-  dev_url: https://github.com/lepture/flask-wtf
-  doc_url: https://flask-wtf.readthedocs.io/en/stable/
+  dev_url: https://github.com/wtforms/flask-wtf
+  doc_url: https://pythonhosted.org/Flask-WTF/
 
 extra:
   recipe-maintainers:
