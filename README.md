@@ -1,17 +1,17 @@
-About flask-wtf
-===============
-
-Home: https://github.com/lepture/flask-wtf
-
-Package license: BSD-3-Clause
+About flask-wtf-feedstock
+=========================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flask-wtf-feedstock/blob/main/LICENSE.txt)
 
+Home: https://github.com/wtforms/flask-wtf
+
+Package license: BSD-3-Clause
+
 Summary: Simple integration of Flask and WTForms
 
-Development: https://github.com/lepture/flask-wtf
+Development: https://github.com/wtforms/flask-wtf
 
-Documentation: https://flask-wtf.readthedocs.io/en/stable/
+Documentation: https://pythonhosted.org/Flask-WTF/
 
 Current build status
 ====================
